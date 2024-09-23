@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="src/css/output.css">
+    <link rel="stylesheet" href="assets/css/output.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/img/logo-3.png">
+    <link href="/dist/tailwind.css" rel="stylesheet">
+
 </head>
 
 <body class="bg-gray-100 text-gray-900">
 
-    <header class="bg-white">
+    <header class="flex" >
         <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
             <div class="flex h-16 items-center justify-between">
                 <div class="flex-1 md:flex md:items-center md:gap-12">
@@ -21,9 +23,7 @@
                         <img class="logo-large" src="assets/img/logo-2.png" alt="logo lucas iribaren">
                     </a>
                 </div>
-                <span class="cursor-pointer ">
-                    <img src="assets/img/icons8-menu-50.png" onclick="Menu()" alt="">
-                </span>
+
                 <div class="md:flex bg-red md:items-center md:gap-12">
                     <nav aria-label="Global" class="hidden md:block">
                         <ul class="flex items-center gap-6 text-sm">
@@ -47,7 +47,7 @@
             </div>
         </div>
         <div class="block md:hidden">
-            <button class="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
+            <button class="p-5 rounded bg-gray-100 text-gray-600 transition hover:text-gray-600/75" id="burger">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="size-5"
