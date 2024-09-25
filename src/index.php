@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/img/logo-3.png">
     <link href="/dist/tailwind.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
 <body class="bg-gray-100 text-gray-900">
 
-    <header class="flex" >
+    <header class="flex">
         <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
             <div class="flex h-16 items-center justify-between">
                 <div class="flex-1 md:flex md:items-center md:gap-12">
@@ -60,15 +61,37 @@
             </button>
         </div>
     </header>
-
-
-    <main class="container mx-auto p-4">
-        <section class="my-8">
-            <h2 class="text-2xl font-semibold mb-4">About Me</h2>
-            <p class="text-lg">I am a web developer with a passion for creating beautiful and functional websites.</p>
+    <main class=" mx-auto ">
+        <section class="min-h-screen content-center text-center bg-slate-300 ">
+            <h1 class="text-8xl">Lucas Iribaren</h1>
+            <p class="text-4xl">Web Developer</p>
+        </section>
+        <section class="my-8 p-4 ">
+            <h2 class="text-2xl font-semibold mb-4">À propos</h2>
+            <article class="border border-slate-300 border-2 p-2 w-9/12 mx-auto flex">
+                <img class="border-1 border-slate-300 size-60" src="assets/img/lucas.jpg" alt="lucas photo">
+                <p class="text-lg border-black border-1 border-l ml-6 my-3 pl-6 p-r-3">Je m'appelle Lucas Iribaren, étudiant en développement web à La Plateforme à Marseille. Passionné par la technologie et la création de solutions innovantes, je me spécialise dans le développement front-end et back-end avec des outils comme JavaScript, PHP, et Tailwind CSS. Actuellement à la recherche d'une alternance pour septembre 2025, je suis motivé par l'apprentissage continu et l'envie de relever des défis techniques.</p>
+            </article>
         </section>
         <section class="my-8">
-            <h2 class="text-2xl font-semibold mb-4">Projects</h2>
+            <h2 class="text-2xl font-semibold mb-4">Compétences</h2>
+            <div class="">
+                <div class="bg-white p-4 rounded shadow">
+                    <img class="border-1 border-slate-300 size-60" src="assets/img" alt="lucas photo">
+                    <p class="text-lg px-3">Je m'appelle Lucas Iribaren, étudiant en développement web à La Plateforme à Marseille. Passionné par la technologie et la création de solutions innovantes, je me spécialise dans le développement front-end et back-end avec des outils comme JavaScript, PHP, et Tailwind CSS. Actuellement à la recherche d'une alternance pour septembre 2025, je suis motivé par l'apprentissage continu et l'envie de relever des défis techniques.</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <img class="border-1 border-slate-300 size-60" src="assets/img/" alt="lucas photo">
+                    <p class="text-lg px-3">Je m'appelle Lucas Iribaren, étudiant en développement web à La Plateforme à Marseille. Passionné par la technologie et la création de solutions innovantes, je me spécialise dans le développement front-end et back-end avec des outils comme JavaScript, PHP, et Tailwind CSS. Actuellement à la recherche d'une alternance pour septembre 2025, je suis motivé par l'apprentissage continu et l'envie de relever des défis techniques.</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <img class="border-1 border-slate-300 size-60" src="assets/img/" alt="lucas photo">
+                    <p class="text-lg px-3">Je m'appelle Lucas Iribaren, étudiant en développement web à La Plateforme à Marseille. Passionné par la technologie et la création de solutions innovantes, je me spécialise dans le développement front-end et back-end avec des outils comme JavaScript, PHP, et Tailwind CSS. Actuellement à la recherche d'une alternance pour septembre 2025, je suis motivé par l'apprentissage continu et l'envie de relever des défis techniques.</p>
+                </div>
+            </div>
+        </section>
+        <section class="my-8">
+            <h2 class="text-2xl font-semibold mb-4">Mes Travaux</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <div class="bg-white p-4 rounded shadow">
                     <h3 class="text-xl font-bold mb-2">Project 1</h3>
