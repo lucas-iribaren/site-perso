@@ -73,23 +73,41 @@
                 <p class="text-lg border-black border-1 border-l ml-6 my-3 pl-6 p-r-3">Je m'appelle Lucas Iribaren, étudiant en développement web à La Plateforme à Marseille. Passionné par la technologie et la création de solutions innovantes, je me spécialise dans le développement front-end et back-end avec des outils comme JavaScript, PHP, et Tailwind CSS. Actuellement à la recherche d'une alternance pour septembre 2025, je suis motivé par l'apprentissage continu et l'envie de relever des défis techniques.</p>
             </article>
         </section>
-        <section class="my-8">
-            <h2 class="text-2xl font-semibold mb-4">Compétences</h2>
-            <div class="">
-                <div class="bg-white p-4 rounded shadow">
-                    <img class="border-1 border-slate-300 size-60" src="assets/img" alt="lucas photo">
-                    <p class="text-lg px-3">Je m'appelle Lucas Iribaren, étudiant en développement web à La Plateforme à Marseille. Passionné par la technologie et la création de solutions innovantes, je me spécialise dans le développement front-end et back-end avec des outils comme JavaScript, PHP, et Tailwind CSS. Actuellement à la recherche d'une alternance pour septembre 2025, je suis motivé par l'apprentissage continu et l'envie de relever des défis techniques.</p>
-                </div>
-                <div class="bg-white p-4 rounded shadow">
-                    <img class="border-1 border-slate-300 size-60" src="assets/img/" alt="lucas photo">
-                    <p class="text-lg px-3">Je m'appelle Lucas Iribaren, étudiant en développement web à La Plateforme à Marseille. Passionné par la technologie et la création de solutions innovantes, je me spécialise dans le développement front-end et back-end avec des outils comme JavaScript, PHP, et Tailwind CSS. Actuellement à la recherche d'une alternance pour septembre 2025, je suis motivé par l'apprentissage continu et l'envie de relever des défis techniques.</p>
-                </div>
-                <div class="bg-white p-4 rounded shadow">
-                    <img class="border-1 border-slate-300 size-60" src="assets/img/" alt="lucas photo">
-                    <p class="text-lg px-3">Je m'appelle Lucas Iribaren, étudiant en développement web à La Plateforme à Marseille. Passionné par la technologie et la création de solutions innovantes, je me spécialise dans le développement front-end et back-end avec des outils comme JavaScript, PHP, et Tailwind CSS. Actuellement à la recherche d'une alternance pour septembre 2025, je suis motivé par l'apprentissage continu et l'envie de relever des défis techniques.</p>
-                </div>
-            </div>
-        </section>
+        <section class="my-8 p-4">
+    <h2 class="text-2xl font-semibold mb-4">Compétences</h2>
+    <div class="border border-slate-300 border-2 p-2 mx-auto flex flex-wrap text-center items-center">
+        <?php
+        $skills = [
+            'JS',
+            'Python',
+            'PHP',
+            'SQL',
+            'Tailwind CSS',
+            'Bootstrap',
+            'React',
+            'Node',
+            'API Platform',
+            'Express',
+            'CSS',
+            'HTML',
+            'BASH',
+            'Git',
+            'GitHub',
+            'VS Code',
+            'Plesk',
+            'Figma'
+        ];
+
+        for ($i = 0; $i < count($skills); $i++) {
+            echo "<div class='bg-white p-4 rounded size-40 m-2 '>
+                <img class='m-auto border-1 object-contain border-slate-300 size-24' src='assets/img/{$skills[$i]}.png' alt='Logo de {$skills[$i]}'>
+                <p class='text-lg px-3'>" . $skills[$i] . "</p>
+                </div>";
+        }
+        ?>
+    </div>
+</section>
+
         <section class="my-8">
             <h2 class="text-2xl font-semibold mb-4">Mes Travaux</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
